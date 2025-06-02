@@ -335,7 +335,7 @@ def visualize_systolic_array_operation(systolic: SystolicArray, cycle_range: Tup
     'weight': 'bold',
     'color': 'black',
     'bbox': dict(facecolor='white', alpha=0.7, edgecolor='none',pad=1)
-}
+})
 
         ax.set_title(f'Cycle {cycle}')
         ax.set_xlabel('PE Column')
