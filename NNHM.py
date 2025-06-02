@@ -330,8 +330,13 @@ def visualize_systolic_array_operation(systolic: SystolicArray, cycle_range: Tup
 
         
         sns.heatmap(pe_values, annot=annot_matrix, fmt='', ax=ax, cmap='viridis',
-                    cbar=False, square=True, linewidths=1, annot_kws={'size': 10, 'weight': 'bold', 'color': 'black',
-                    'bbox': dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)}
+                    cbar=False, square=True, linewidths=1,annot_kws = {
+    'size': 10,
+    'weight': 'bold',
+    'color': 'black',
+    'bbox': dict(facecolor='white', alpha=0.7, edgecolor='none', pad=1)
+}
+
         ax.set_title(f'Cycle {cycle}')
         ax.set_xlabel('PE Column')
         ax.set_ylabel('PE Row')
